@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sing Up</title>
+    <link rel="stylesheet" href="./Css/login.css">
+    <link rel="stylesheet" href="./Css/font-awesome.min.css">
+    <link rel="stylesheet" href="./Css/preload.css">
+</head>
+
+<body>
+    <div id="center">
+        <div class="loading-screen">
+            <div class="loading-animation">
+               <img src="./Images/Header/New folder/logo.png" alt="" class="logo-loading ">
+                <div class="loading-bar"></div>
+            </div>
+        </div>
+    </div>
+    
+    
+    </script>
+    
+    <script>
+        var loader = document.getElementById("center")
+        window.addEventListener("load", function () {
+            loader.style.display = "none";
+        })
+    </script>
+    <div class="overlay" class="login">
+
+        <form class="login">
+            <div class="con">
+                <header class="head-form">
+                    <a href="./index.html"><img src="./Images/Header/New folder/logo3.png" alt=""></a>
+                    <h2>Log In</h2>
+                    <p>login here using your username and password</p>
+                </header>
+                <br>
+                <div class="field-set">
+
+                    <input class="form-input" id="txt-input" type="text" placeholder="@UserName" required>
+
+                    <br>
+
+                    <input class="form-input" type="password" placeholder="Password" id="pwd" name="password" required>
+                    <br>
+                    <button class="log-in" id="login1"> Log In </button>
+                </div>
+                <div class="forget-signup">
+                    <button>Forget Password</button>
+                    <button id="register">Sign Up</button>
+                </div>
+            </div>
+        </form>
+
+    </div>
+
+    <!-- signup -->
+    <div class="overlay" class="register">
+
+        <form style="width: 565px; margin: 0 auto;"  class="register">
+            <div class="con">
+                <header class="head-form" style="margin: 0px">
+                    <a href="./index.html"><img src="./Images/Header/New folder/logo3.png" alt="" style="width: 60%; height: 58%;"></a>
+                    <h2>Sign Up</h2>
+                    
+                </header>
+                <br>
+                <div class="signup">
+                    <input class="form-input" id="txt-input" type="text" placeholder="First Name" style="right:0px; width:41%; margin-left: 13px;  display: inline-block;" required>
+                    <input class="form-input" id="txt-input lastname" type="text" placeholder="Last Name "  style=" width:41%;  margin-left: 74px;" required>
+                    <input class="form-input" id="txt-input" type="telephone" placeholder="Phone"  style="right:0px; margin-left: 13px; width:88%" required>
+
+                    <input class="form-input" id="txt-input" type="email" placeholder="Email"  style="right:0px; margin-left: 13px; width:88%;" required>
+                  
+
+                    <input class="form-input" id="txt-input" type="text" placeholder="@UserName"  style="right:0px; margin-left: 13px; width:88%" required>
+
+                    <input class="form-input" type="password" placeholder="Password" id="pwd" name="password"  style="right:0px; margin-left: 13px; width:88%" required>
+                    <button class="log-in" style="right:0px; margin-left: 23%;"> Sign Up </button>
+                </div>
+                <div class="forget-signup">
+                    <button id="l">Log In</button>
+                </div>
+            </div>
+        </form>
+        
+    </div>
+    <iframe style="display: none;" src="https://www.youtube.com/embed/vc2JKNfJE2U" title="YouTube video player"
+        frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen>
+    </iframe>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script>
+        $(".register").hide()
+
+        $(document).ready(function(){
+            $("#l").click(function(){
+            
+               
+              
+                $(".register").hide()
+                $(".login").show()
+
+            })
+            $("#register").click(function(){
+               
+                $(".register").show()
+                $(".login").hide()
+
+            })
+        })
+    </script>
+
+    
+   
+</body>
+</html>
